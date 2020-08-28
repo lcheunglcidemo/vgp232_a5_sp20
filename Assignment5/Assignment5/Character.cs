@@ -19,6 +19,7 @@ namespace Assignment5
             ; // Default constructor.
         }
 
+        // Constructor overload.
         public Character(string name, RaceCatagory race, int hp)
         {
             HealthPoints = hp;
