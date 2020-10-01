@@ -1,18 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment5
 {
     public class Inventory
     {
+        // the max number of slots available
         int slots;
-        List<Item> items;
+        Item[] items;
+        
+        public int Slot
+        {
+            get 
+            {
+                return slots;
+            }
+        }
 
         public Inventory(int slots)
         {
+            this.slots = slots;
             items = new List<Item>(slots);
         }
 
@@ -30,8 +37,15 @@ namespace Assignment5
 
         public void ShowInventory()
         {
+            // TODO: add implementation. Should print out what items are available.
+            throw new NotImplementedException();
+        }
+        
+        public Item GetItem(int index)
+        {
             // TODO: add implementation.
             throw new NotImplementedException();
         }
+
     }
 }
