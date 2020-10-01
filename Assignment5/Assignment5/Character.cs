@@ -21,6 +21,7 @@ namespace Assignment5
             ; // Default constructor.
         }
 
+        // Constructor overload.
         // TODO: update the constructor to include the element
         public Character(string name, RaceCatagory race, int hp)
         {
@@ -31,7 +32,7 @@ namespace Assignment5
 
         public void TakeDamage(int damage)
         {
-            HealthPoints -= 1;
+            HealthPoints -= damage;
             Console.WriteLine("{0} has taken {1} damage and has a total of {2} left.", Name, damage, HealthPoints);
         }
 
