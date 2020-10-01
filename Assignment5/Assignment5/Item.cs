@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +19,13 @@ namespace Assignment5
             Name = name;
             Modifier = modifier;
             IType = type;
+        }
+        
+        public override string ToString()
+        {
+            // TODO: should override the ToString method so it display the output
+            // e.g. Axe 10 equipment, Potion 10 consumable, SilverKey 1 key
+            return base.ToString();
         }
     }
 }
