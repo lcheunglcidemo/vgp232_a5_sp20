@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using NUnit.Framework;
 
 namespace Assignment5
@@ -15,6 +11,7 @@ namespace Assignment5
         [SetUp]
         public void Setup()
         {
+            // TODO: update this function once the changes to the constructor has been made in Character.cs
             myCharacter = new Character("Bob", RaceCatagory.Human, 100);
         }
 
@@ -38,6 +35,8 @@ namespace Assignment5
 
             Assert.AreEqual(expected, actual);
         }
+        
+        // TODO: should add another test for validating the character was created properly for each of its properties.
 
     }
 }
